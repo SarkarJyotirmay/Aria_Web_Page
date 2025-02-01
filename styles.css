@@ -254,6 +254,7 @@ nav .social-container{
   flex-direction: column;
   width: 30%;
   /* background-color: green; */
+  position: relative;
 }
 .card-image{
   width: 100%;
@@ -293,9 +294,10 @@ nav .social-container{
     height: 2.8rem;
     border: none;
     border-radius: 8px;
-    position: relative;
-    left: 130px;
-    bottom: 22px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.4rem;
 }
 .service-cards{
   display: flex;
@@ -303,17 +305,72 @@ nav .social-container{
 }
 
 /* *Templates */
-.area-image, .area-text{
-  width: 50%;
-  background-color: red;
-  height: 300px;
+.area{
+  display: flex;
+  min-width: 992px;
+  height: 34rem;
 }
-.area-image img{
-  width: 100vh;
-  object-fit: contain;
-  display: inline-block;
-
+.area-image{
+  width: 50%;
+  background: url("./asset/details-1-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.area-text{
+  width: 50%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 3rem;
+  color: #484a46;
 } 
+.area-text>h2{
+  font-size: 2rem;
+}
+.area-text-content{
+  /* background-color: red; */
+  display: flex;
+  gap: 1rem;
+}
+.content-marker {
+  width: 8%;
+  height: 43px;
+  border: 2px solid  #484a46;
+  border-radius: 50%;
+  background-color: #14bf98;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-lines{
+  width: 80%;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content-lines>h2{
+  color: #14bf98;
+}
+.content-lines>p{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.493);
+}
+.content-marker:hover{
+  background-color: transparent;
+  color:  #484a46;
+}
+.content-lines>h2:hover{
+  color: #484a46;
+}
+
 
 
 
