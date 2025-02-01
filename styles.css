@@ -1,0 +1,320 @@
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+/** NAV BAR  */
+nav {
+  width: 100%;
+  height: 4rem;
+  padding: 0 4rem;
+  background-color: #113448;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+/* Logo */
+#Layer_2 {
+  width: 120px;
+}
+/* links in nav */
+.elements {
+  width: 60%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #14bf98;
+}
+#home-link {
+  color: #14bf98;
+}
+
+nav .social-container{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.4 88.3"><style>.st0{fill:%2314BF98;}</style><path class="st0" d="M1.2,49.3c-1.6-3.3-1.6-7.1,0-10.4L20.7,5.2c2-3.1,5.3-5,9-5.2h39c3.7,0.2,7,2.1,9,5.2L97.2,39c1.6,3.3,1.6,7.1,0,10.4L77.7,83.1c-2,3.1-5.3,5-9,5.2h-39c-3.7-0.2-7-2.1-9-5.2L1.2,49.3z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-container i{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* * HERO */
+
+.hero {
+  min-width: 100%;
+  height: 892px;
+  background: url(./asset/header-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 70%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: antiquewhite;
+  /* margin-bottom: -40px; */
+  position: absolute;
+  bottom: 50px;
+}
+.content h1 {
+  font-size: 4rem;
+}
+
+#after-content::before{
+  content: "TEMPLATE";
+  animation-name: content-change;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+  @keyframes content-change {
+    0%{
+      content: "TEMPLATE";
+    }
+    50%{
+        content: "SERVICES";
+    }
+    100%{
+        content: "SUPPORT";
+    }
+  }
+
+.content p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.btn{
+  width: 8rem;
+  height: 3rem;
+  padding: 2px;
+  background-color: #14bf98;
+  color: aliceblue;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+
+}
+.btn:hover{
+  background: transparent;
+  color: #14bf98;
+  border:1px solid #14bf98;
+}
+
+
+
+
+/** INTRO */ 
+.intro, .briefing{
+  width: 100%;
+  margin: 2rem 0;
+  padding: 6rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.intro .intro-text{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: rgba(46, 43, 43, 0.822);
+}
+.intor-subject{
+  font-size: 14px;
+  color: #14bf98;
+}
+.intro h2{
+  font-size: 2rem;
+  word-spacing: 2px;
+}
+.intro h2, h3{
+  color: rgb(56, 54, 54);
+}
+.intro p:last-of-type{
+  font-style: italic;
+}
+
+.intro-image{
+  width: 60%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.intro-image img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+ .intro-image img:hover{
+    transform: scale(1.1);
+  }
+
+  /** Briefing */
+  .briefing-content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .briefing-content p{
+    color: rgba(0, 0, 0, 0.61);
+  }
+  
+.briefing-content .briefing-logo-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+ .briefing-content .briefing-logo-container i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+}
+.briefing-content .briefing-logo-container {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.4 88.3"><style>.st0{fill:%2314BF98;}</style><path class="st0" d="M1.2,49.3c-1.6-3.3-1.6-7.1,0-10.4L20.7,5.2c2-3.1,5.3-5,9-5.2h39c3.7,0.2,7,2.1,9,5.2L97.2,39c1.6,3.3,1.6,7.1,0,10.4L77.7,83.1c-2,3.1-5.3,5-9,5.2h-39c-3.7-0.2-7-2.1-9-5.2L1.2,49.3z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* * Services */
+.services{
+  /* background-color: red; */
+  padding: 6rem 3rem 1.5rem ;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.services>p, .services>h2{
+  text-align: center;
+  padding: 0 30%;
+}
+.services>p{
+  color: #14bf98;
+}
+.services h2{
+  color: rgb(56, 54, 54);
+  font-size: 2rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  /* background-color: green; */
+}
+.card-image{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card-content{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  border: 1px solid rgba(87, 85, 85, 0.463);
+  border-radius: 0 0 10px 10px;
+}
+.card-content>p, .card-content>ul li{
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 1.4;
+}
+.card-content>ul li{
+  list-style: square;
+}
+.card-content>ul li::marker{
+  color: #14bf98;
+  font-size: 130%;
+}
+.card-price{
+  color: #14bf98;
+}
+.card-button {
+    background-color: #14bf98;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 30%;
+    height: 2.8rem;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    left: 130px;
+    bottom: 22px;
+}
+.service-cards{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* *Templates */
+.area-image, .area-text{
+  width: 50%;
+  background-color: red;
+  height: 300px;
+}
+.area-image img{
+  width: 100vh;
+  object-fit: contain;
+  display: inline-block;
+
+} 
+
+
+
+
