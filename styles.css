@@ -253,6 +253,7 @@ nav .social-container{
   display: flex;
   flex-direction: column;
   width: 30%;
+  height: 100%;
   /* background-color: green; */
   position: relative;
 }
@@ -325,7 +326,7 @@ nav .social-container{
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding: 0 3rem;
+  padding: 0 4rem;
   color: #484a46;
 } 
 .area-text>h2{
@@ -337,8 +338,8 @@ nav .social-container{
   gap: 1rem;
 }
 .content-marker {
-  width: 8%;
-  height: 43px;
+  width: 50px;
+  height: 48px;
   border: 2px solid  #484a46;
   border-radius: 50%;
   background-color: #14bf98;
@@ -370,6 +371,116 @@ nav .social-container{
 .content-lines>h2:hover{
   color: #484a46;
 }
+
+.templates{
+  margin-top: 7rem;
+}
+#area-2>.area-image{
+  background: url("./asset/details-2-background.jpg");
+}
+.text-area-options{
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  color: #c1cace;
+}
+.text-area-options>h2:hover{
+  color: #14bf98;
+}
+.option-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+._100-percent, ._76-percent, ._90-percent{
+  height: 1.5rem;
+  background-color: #17c89f;
+  border-radius: 2px;
+}
+._100-percent{
+  width: 100%;
+}
+._76-percent{
+  width: 76%;
+}
+._90-percent{
+  width: 90%;
+}
+.option-details>p{
+  color: #7d8487;
+  font-size: 1.1rem;
+}
+.option-details>p>a{
+  color: #14bf98;
+}
+
+/* * Testimonials */
+.testimonials{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 5rem 3rem;
+
+}
+.testimonials>h2{
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(0 0 0 / 68%);
+}
+.testimonials>p{
+  text-align: center;
+  padding: 0 25%;
+  color: #484a46;
+  font-size: 1.1rem;
+}
+.testimonial-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.testimonial-container> i{
+  font-size: 2rem;
+  color:#484a46;
+  font-weight: 500;
+  margin-top: 0 !important;
+}
+.testimonial-detail{
+  /* background-color: green; */
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-image>img{
+  display: inline-block;
+  border-radius: 50%;
+}
+.testimonial-detail>h2, .testimonial-detail>p{
+  text-align: center;
+}
+.testimonial-detail>h2{
+  color: #1a1b1a;
+  font-size: 1.6rem;
+}
+.testimonial-detail>p{
+  color: #484a46;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+
+
+
+
+
 
 
 
