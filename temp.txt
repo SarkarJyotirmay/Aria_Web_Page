@@ -1,0 +1,6 @@
+<div>
+        <h2>Follow Aria On Social Media</h2>
+        <div class="social-container">
+          <a href=""><i class="fa-solid fa-location-dot"></i></a>
+        </div>
+      </div>
