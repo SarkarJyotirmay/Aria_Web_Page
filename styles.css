@@ -144,9 +144,9 @@ nav .social-container{
 
 }
 .btn:hover{
-  background: transparent;
+  background: white;
   color: #14bf98;
-  border:1px solid #14bf98;
+  border:2px solid #14bf98;
 }
 /* * Up Icon */
 #up-icon{
@@ -404,7 +404,7 @@ nav .social-container{
   /* background-color: red; */
   display: flex;
   justify-content: space-between;
-  color: #c1cace;
+  color: #999d9f;
 }
 .text-area-options>h2:hover{
   color: #14bf98;
@@ -924,6 +924,52 @@ input:focus::placeholder {
   background-color: transparent;
   color: #14bf98;
 }
+
+.footer{
+  background-color: #113448;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /* justify-content: center; */
+  padding: 5rem 3rem 2rem;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+.footer>p{
+  text-align: center;
+}
+.footer-up{
+  display: flex;
+  gap: 2rem;
+  color: #fff;
+}
+.footer-about{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: green; */
+}
+.footer-about>p{
+  color: #ffffffc4;
+}
+
+.footer-anchor{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+.footer-links{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-links a{
+  color: #ffffffc4;
+}
+
 
 
 
